@@ -51,9 +51,9 @@ int main() {
             MAKE_NEIGHBOUR(20, E),
             MAKE_NEIGHBOUR(12, C)),
         create_node('B', 3,
-                    MAKE_NEIGHBOUR(10, A),
-                    MAKE_NEIGHBOUR(10, C),
-                    MAKE_NEIGHBOUR(30, H)),
+            MAKE_NEIGHBOUR(10, A),
+            MAKE_NEIGHBOUR(10, C),
+            MAKE_NEIGHBOUR(30, H)),
         create_node('C', 5,
             MAKE_NEIGHBOUR(12, A),
             MAKE_NEIGHBOUR(10, B),
@@ -77,9 +77,9 @@ int main() {
             MAKE_NEIGHBOUR(10, F),
             MAKE_NEIGHBOUR(10, H)),
         create_node('H', 3,
-                    MAKE_NEIGHBOUR(30, B),
-                    MAKE_NEIGHBOUR(12, C),
-                    MAKE_NEIGHBOUR(10, G)),
+            MAKE_NEIGHBOUR(30, B),
+            MAKE_NEIGHBOUR(12, C),
+            MAKE_NEIGHBOUR(10, G)),
     };
 
     pf_callback callback;
