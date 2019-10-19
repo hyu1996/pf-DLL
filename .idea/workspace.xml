@@ -10,12 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f08bb7e5-864c-4244-9268-da7a7a5141ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/demo.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/map.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/map.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/pf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc/32/pf.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc/64/pf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo.c" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/pf.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/pf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc/pf32.dll" beforeDir="false" afterPath="$PROJECT_DIR$/msvc/pf32.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc/pf64.dll" beforeDir="false" afterPath="$PROJECT_DIR$/msvc/pf64.dll" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571453034397</updated>
       <workItem from="1571453035697" duration="8197000" />
+      <workItem from="1571467723964" duration="18000" />
     </task>
     <servers />
   </component>
@@ -76,7 +76,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

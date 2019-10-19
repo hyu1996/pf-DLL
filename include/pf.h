@@ -27,13 +27,13 @@ typedef pf_size (*pf_successors)(pf_data u, pf_node location, pf_successor* succ
 
 typedef union {
     struct {
+        pf_judge fn_judge;
         pf_successors fn_successors;
         pf_heuristic fn_heuristic;
-        pf_judge fn_judge;
     } c3;
     struct {
-        pf_successors fn_successors;
         pf_judge fn_judge;
+        pf_successors fn_successors;
     } c2;
 } pf_callback;
 
