@@ -6,14 +6,14 @@
   callback.c3.fn_judge = judge;
   
   /**************
- *   Game Map
- *  ___A__(B)__
- * |     \ |   |
- * E___D___C   |
- * |   |   | \ |
- * ___(F)__G___H
- * cost(__) 10, cost(|) 10, cost(\) 12
- */
+   *   Game Map
+   *  ___A__(B)__
+   * |     \ |   |
+   * E___D___C   |
+   * |   |   | \ |
+   * ___(F)__G___H
+   * cost(__) 10, cost(|) 10, cost(\) 12
+   */
   
   pf_handle handle = pf_create(NULL, MAX_NEIGHBOUR_NUM);  //用户数据指针，最大邻边数量
   pf_size len = pf_invoke(handle,
