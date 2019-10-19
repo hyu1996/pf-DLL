@@ -3,18 +3,23 @@
 #include "map.h"
 
 pf_size judge(pf_data u, pf_node location, pf_node goal) {
+    (void) u;
     // u: pf_create(From here, ?)
     // determine if you have reached your goal
     return location == goal;
 }
 
 pf_size heuristic(pf_data u, pf_node location, pf_node goal) {
+    (void) u;
+    (void) goal;
+    (void) location;
     // goal: pf_invoke(?, ?, ?, From here, ?)
     // cost from current location to goal
     return 1;
 }
 
 pf_size successors(pf_data u, pf_node location, pf_successor* successors) {
+    (void) u;
     // len(successors): pf_create(?, From here)
     struct node* loc = location;
     for (pf_size i = 0; i < loc->neighbour_num; ++ i) {
@@ -46,9 +51,9 @@ int main() {
             MAKE_NEIGHBOUR(20, E),
             MAKE_NEIGHBOUR(12, C)),
         create_node('B', 3,
-            MAKE_NEIGHBOUR(10, A),
-            MAKE_NEIGHBOUR(10, C),
-            MAKE_NEIGHBOUR(40, H)),
+                    MAKE_NEIGHBOUR(10, A),
+                    MAKE_NEIGHBOUR(10, C),
+                    MAKE_NEIGHBOUR(30, H)),
         create_node('C', 5,
             MAKE_NEIGHBOUR(12, A),
             MAKE_NEIGHBOUR(10, B),
@@ -72,9 +77,9 @@ int main() {
             MAKE_NEIGHBOUR(10, F),
             MAKE_NEIGHBOUR(10, H)),
         create_node('H', 3,
-            MAKE_NEIGHBOUR(40, B),
-            MAKE_NEIGHBOUR(12, C),
-            MAKE_NEIGHBOUR(10, G)),
+                    MAKE_NEIGHBOUR(30, B),
+                    MAKE_NEIGHBOUR(12, C),
+                    MAKE_NEIGHBOUR(10, G)),
     };
 
     pf_callback callback;
