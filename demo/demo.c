@@ -3,14 +3,19 @@
 #include "map.h"
 
 pf_size judge(pf_data u, pf_node location, pf_node goal) {
+    // u: pf_create(From here, ?)
     // determine if you have reached your goal
     return location == goal;
 }
+
 pf_size heuristic(pf_data u, pf_node location, pf_node goal) {
+    // goal: pf_invoke(?, ?, ?, From here, ?)
     // cost from current location to goal
     return 1;
 }
+
 pf_size successors(pf_data u, pf_node location, pf_successor* successors) {
+    // len(successors): pf_create(?, From here)
     struct node* loc = location;
     for (pf_size i = 0; i < loc->neighbour_num; ++ i) {
         successors[i].node = loc->neighbours[i].node;
@@ -77,7 +82,7 @@ int main() {
     callback.c3.fn_heuristic = heuristic;
     callback.c3.fn_judge = judge;
 
-    pf_handle handle = pf_create(map, MAX_NEIGHBOUR_NUM);
+    pf_handle handle = pf_create(NULL, MAX_NEIGHBOUR_NUM);
     pf_size len = pf_invoke(handle, PF_A_STAR, ADDRESS_OF_NODE(B), ADDRESS_OF_NODE(F), &callback);
 
     // [B] -> [C] -> [G] -> [F]
