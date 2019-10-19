@@ -26,15 +26,15 @@ typedef pf_size (*pf_heuristic)(pf_data u, pf_node location, pf_node goal);
 typedef pf_size (*pf_successors)(pf_data u, pf_node location, pf_successor* successors);
 
 typedef union {
-    struct {
+    struct { // only for PF_DIJKSTRA
+        pf_judge fn_judge;
+        pf_successors fn_successors;
+    } c2;
+    struct { // for PF_A_STAR, PF_FRINGE, PF_ID_A_STAR
         pf_judge fn_judge;
         pf_successors fn_successors;
         pf_heuristic fn_heuristic;
     } c3;
-    struct {
-        pf_judge fn_judge;
-        pf_successors fn_successors;
-    } c2;
 } pf_callback;
 
 typedef enum {
