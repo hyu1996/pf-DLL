@@ -1,4 +1,8 @@
-## 示例代码：
+### 说明
+封装了 [pathfinding](https://github.com/samueltardieu/pathfinding) 部分算法，导出到`c`接口
+
+
+### 示例代码：
 ```
   pf_callback callback;
   callback.c3.fn_successors = successors;
